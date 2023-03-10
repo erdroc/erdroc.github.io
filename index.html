@@ -6,21 +6,61 @@
 <style>
 * {
   box-sizing: border-box;
+	border-radius: 5px;
 }
 
 /* Add a gray background color with some padding */
 body {
   font-family: Arial;
   padding: 20px;
-  background: #f1f1f1;
+  background: #2F4F4F;
 }
 
 /* Header/Blog Title */
 .header {
-  padding: 30px;
+  padding: 1px;
   font-size: 40px;
   text-align: center;
-  background: white;
+  background: #48D1CC;
+}
+
+a.header_link:link {
+	text-decoration:none;
+	color:black;
+}
+a.header_link:visited {
+	text-decoration:none;
+	color:black;
+}
+a.header_link:hover {
+	text-decoration:none;
+	color:black;
+}
+a.header_link:active {
+	text-decoration:none;
+	color:black;
+}
+
+a.subheader_link:link {
+	text-decoration:underline;
+	color:black;
+}
+a.subheader_link:visited {
+	text-decoration:underline;
+	color:black;
+}
+a.subheader_link:hover {
+	text-decoration:underline;
+	color:black;
+}
+a.subheader_link:active {
+	text-decoration:underline;
+	color:black;
+}
+.subheader {
+  padding: 0px;
+  font-size: 20px;
+  text-align: center;
 }
 
 /* Create two unequal columns that floats next to each other */
@@ -78,7 +118,17 @@ body {
 <body>
 
 <div class="header">
-  <h2 style="font-family:Creepster;">Eric Damm</h2>
+  <h2 style="font-family:Creepster;"><a class="header_link" href="index.html" target="_self"><span style="background-color:#AFEEEE;">&nbspEric Damm&nbsp</span></a></h2>
+	<div class="subheader">
+		<p>What I lack in web design ability, I make up for in... Well I'm not really sure!</p>
+		<p>
+			<a class="subheader_link" href="about_me/main.html" target="_self">About Me</a>
+			&nbsp&nbsp
+			<a class="subheader_link" href="projects/main.html" target="_self">Personal Projects</a>
+			&nbsp&nbsp
+			<a class="subheader_link" href="https://scholar.google.com/citations?user=ssqYfhEAAAAJ&hl=en"target="_blank">Publications</a>
+		</p>
+	</div>
 </div>
 
 <div class="row">
@@ -92,7 +142,7 @@ body {
 					max-width: 100%;
 				}
 			</style>
-			<img src="index_images/ladybug.jpg" alt="ladybug image" class="ladybug">
+			<img src="images/ladybug.jpg" alt="ladybug image" class="ladybug">
       <p>Here is some text describing the ladybug project</p>
       <p>Here is some more text describing the ladybug project</p>
     </div>
@@ -105,7 +155,7 @@ body {
 					max-width: 100%;
 				}
 			</style>
-			<img src="index_images/bullfrog.jpg" alt="bullfrog image" class="bullfrog">
+			<img src="images/bullfrog.jpg" alt="bullfrog image" class="bullfrog">
       <p>Here is some text describing the bullfrog project</p>
       <p>Here is some more text describing the bullfrog project</p>
     </div>
@@ -119,7 +169,7 @@ body {
 					max-width: 100%;
 				}
 			</style>
-			<img src="index_images/robot.jpg" alt="robot image" class="about_me">
+			<img src="images/me.jpg" alt="robot image" class="about_me">
       <p>I am a human</p>
     </div>
 <!--
@@ -131,14 +181,14 @@ body {
     </div>
 -->
     <div class="card">
-      <h3>Don't Follow Me</h3>
-      <p>I don't use social media. Click <a href="games/w3_flappy_bird.html" target="_blank">This link</a> instead to play a game! </p>
+      <h3>Contact</h3>
+      <p>I don't really use social media, but your best bet is my <a href="https://www.linkedin.com/in/eric-damm/" target="_blank">LinkedIn</a>. Or just use <a href="games/w3_flappy_bird.html" target="_blank">this link</a> instead to play a game! </p>
     </div>
   </div>
 </div>
 
 <div class="footer">
-  <h2>I made this in 10 min from some copy and pasted code</h2>
+  <h2 style="font-family:Creepster;" >Most of the html to build this site was copied and pasted</h2>
 </div>
 
 </body>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+	border-radius: 5px;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #2F4F4F;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 1px;
+  font-size: 40px;
+  text-align: center;
+  background: #48D1CC;
+}
+
+a.header_link:link {
+	text-decoration:none;
+	color:black;
+}
+a.header_link:visited {
+	text-decoration:none;
+	color:black;
+}
+a.header_link:hover {
+	text-decoration:none;
+	color:black;
+}
+a.header_link:active {
+	text-decoration:none;
+	color:black;
+}
+
+a.subheader_link:link {
+	text-decoration:underline;
+	color:black;
+}
+a.subheader_link:visited {
+	text-decoration:underline;
+	color:black;
+}
+a.subheader_link:hover {
+	text-decoration:underline;
+	color:black;
+}
+a.subheader_link:active {
+	text-decoration:underline;
+	color:black;
+}
+.subheader {
+  padding: 0px;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2 style="font-family:Creepster;"><a class="header_link" href="../index.html" target="_self">Eric Damm</a></h2>
+	<div class="subheader">
+    <p>What I lack in web design ability, I make up for in... Well I'm not really sure!</p>
+		<p>
+			<a class="subheader_link" href="../about_me/main.html" target="_self">About Me</a>
+			&nbsp&nbsp
+			<a class="subheader_link" href="../projects/main.html" target="_self"><span style="background-color:#AFEEEE;">Personal Projects</span></a>
+			&nbsp&nbsp
+			<a class="subheader_link" href="https://scholar.google.com/citations?user=ssqYfhEAAAAJ&hl=en" target="_blank">Publications</a>
+		</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="card">
+		<h2>Ladybug</h2>
+		<h5>Autonomous Unmanned Ground Vehicle "Ladybug", 03/09/23</h5>
+		<!--<div class="fakeimg" style="height:200px;">Image</div>-->
+		<style>
+			.ladybug {
+        max-width: 50%;
+        max-height: 100%;
+        height:auto;
+        width:auto;
+			}
+		</style>
+    <div style="text-align:center;">
+			<img src="../images/ladybug.jpg" alt="ladybug image" class="ladybug">
+		</div>
+		<p>Here is some text describing the ladybug project</p>
+		<p>Here is some more text describing the ladybug project</p>
+	</div>
+	<div class="card">
+		<h2>Bullfrog</h2>
+		<h5>Autonomous Unmanned Ground Vehicle "Bullfrog", 03/09/23</h5>
+		<!--<div class="fakeimg" style="height:200px;">Image</div>-->
+		<style>
+			.bullfrog {
+        max-width: 50%;
+        max-height: 100%;
+        height:auto;
+        width:auto;
+			}
+		</style>
+    <div style="text-align:center;">
+			<img src="../images/bullfrog.jpg" alt="bullfrog image" class="bullfrog">
+		</div>
+		<p>Here is some text describing the bullfrog project</p>
+		<p>Here is some more text describing the bullfrog project</p>
+	</div>
+</div>
+
+<div class="footer">
+  <h2 style="font-family:Creepster;" >Most of the html to build this site was copied and pasted</h2>
+</div>
+
+</body>
+</html>
+
