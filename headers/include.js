@@ -1,7 +1,4 @@
 // include.js
-window.addEventListener('load', function() {
-	window.scrollTo(0, 0);
-});
 
 fetch('headers/style1.html')
   .then(response => response.text())
