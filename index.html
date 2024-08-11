@@ -13,6 +13,15 @@
 
 <body>
 
+<div id="header"></div>
+<script>
+  fetch('headers/header1.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
+<!--
 <div class="header">
   <h2 style="font-family:Creepster;"><a class="header_link" href="index.html" target="_self"><span style="background-color:#AFEEEE;">&nbspEric Damm&nbsp</span></a></h2>
 	<div class="subheader">
@@ -26,7 +35,7 @@
 		</p>
 	</div>
 </div>
-
+-->
 <div class="row">
   <div class="leftcolumn">
     <div class="card">
