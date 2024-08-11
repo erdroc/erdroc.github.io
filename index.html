@@ -5,7 +5,13 @@
 
 <body>
 
-<div w3-include-html="headers/header1.html"></div> 
+<script>
+  fetch('headers/header1.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    });
+</script>
 
 <div class="row">
   <div class="leftcolumn">
