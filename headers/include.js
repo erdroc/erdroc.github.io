@@ -1,5 +1,6 @@
 // include.js
 
+window.addEventListener('DOMContentLoaded', () => {
 fetch('headers/style1.html')
   .then(response => response.text())
   .then(data => {
@@ -17,4 +18,4 @@ fetch('headers/footer1.html')
   .then(data => {
     document.getElementById('footer').innerHTML = data;
   });
-
+});
