@@ -18,7 +18,11 @@
       document.getElementById('header-placeholder').innerHTML = data;
       const link = document.getElementById(highlightLink);
       if (link) {
+        if (highlightLink === 'home-link') {
           link.style.backgroundColor = '#AFEEEE';
+        } else {
+          link.style.backgroundColor = '#AFEEEE';
+        }
       }
     });
 </script>
