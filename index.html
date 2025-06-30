@@ -10,13 +10,22 @@
 
   <div id="header-placeholder"></div>
 
-  <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-  </script>
+<script>
+  const highlightLink = 'about-link'; // Or 'projects-link', 'pubs-link', 'home-link'
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+      const link = document.getElementById(highlightLink);
+      if (link) {
+        if (highlightLink === 'home-link') {
+          link.querySelector('span').style.backgroundColor = '#AFEEEE';
+        } else {
+          link.style.backgroundColor = '#AFEEEE';
+        }
+      }
+    });
+</script>
 
 <div class="row">
   <div class="leftcolumn">
