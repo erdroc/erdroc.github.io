@@ -7,19 +7,24 @@
 </head>
 <body>
 
-<div class="header">
-  <h2 style="font-family:Creepster;"><a class="header_link" href="../index.html" target="_self">Eric Damm</a></h2>
-	<div class="subheader">
-    <p>What I lack in web design ability, I make up for in... Well I'm not really sure!</p>
-		<p>
-			<a class="subheader_link" href="../about_me/main.html" target="_self"><span style="background-color:#AFEEEE;">About Me</span></a>
-			&nbsp&nbsp
-			<a class="subheader_link" href="../projects/main.html" target="_self">Personal Projects</a>
-			&nbsp&nbsp
-			<a class="subheader_link" href="https://scholar.google.com/citations?user=ssqYfhEAAAAJ&hl=en" target="_blank">Publications</a>
-		</p>
-	</div>
-</div>
+<div id="header-placeholder"></div>
+
+<script>
+  const highlightLink = 'about-link';
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+      const link = document.getElementById(highlightLink);
+      if (link) {
+        if (highlightLink === 'home-link') {
+          link.querySelector('span').style.backgroundColor = '#AFEEEE';
+        } else {
+          link.style.backgroundColor = '#AFEEEE';
+        }
+      }
+    });
+</script>
 
 <div class="row">
 	<div class="card">
