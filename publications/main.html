@@ -4,13 +4,14 @@
 <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/stylesheets/styles.css">
+
 <style>
 .papers {
   counter-reset: paper; /* initialize counter */
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 20pt
+  margin-top: 20pt;
 }
 
 .paper-card {
@@ -58,6 +59,21 @@
   font-style: italic;
 }
 
+.paper-links {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.paper-links a {
+  text-decoration: none;
+  color: #007acc;
+  margin: 0 0.2rem; /* optional spacing between links */
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
 </style>
 </head>
 <body>
@@ -81,15 +97,115 @@
     });
 </script>
 
+<div class="row">
+	<div class="card">
+		<h2>Links</h2>
+		<h3>
+      [<a href="https://scholar.google.com/citations?user=ssqYfhEAAAAJ&hl=en" target="_blank">Google Scholar</a>]
+      [<a href="https://ieeexplore.ieee.org/author/451758983679761" target="_blank">IEEE Xplore</a>]
+      (Google Scholar will be the most up-to-date)
+    </h3>
+	</div>
+</div>
+
 <div class="papers">
+   
+  <div class="paper-card">
+    <div class="paper-content">
+      <h3 class="paper-title">Incorporating Stochastic Models of Controller Behavior into Kinodynamic Efficiently Adaptive State Lattices for Mobile Robot Motion Planning in Off-Road Environments</h3>
+      <p class="paper-authors">By Eric R. Damm, Eli S. Lancaster, Felix A. Sanchez, Kiana Bronder, Jason M. Gregory, and Thomas M. Howard</p>
+      <p class="paper-conference">In <em>IFRR 2025 International Symposium of Experimental Robotics</em></p>
+    </div>
+  </div>
+   
+   <div class="paper-card">
+    <div class="paper-content">
+      <h3 class="paper-title">A Learning-Based Approach to Motion Planning with State Lattices in Off-Road Environments</h3>
+      <p class="paper-authors">By Joshua Rosser, Garrett Warnell, Eli S. Lancaster, Felix A. Sanchez, Ethan K. Fahnestock, Eric R. Damm, Jason M. Gregory, and Thomas M. Howard</p>
+      <p class="paper-conference">In <em>2025 IEEE International Conference on Automation Science and Engineering</em></p>
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-content">
+      <h3 class="paper-title">Temporally-Sampled Efficiently Adaptive State Lattices for Autonomous Ground Robot Navigation in Partially Observed Environments</h3>
+      <p class="paper-authors">By Ashwin Satish Menon, Eric R. Damm, Eli S. Lancaster, Felix A. Sanchez, Jason M. Gregory, and Thomas M. Howard</p>
+      <p class="paper-conference">In <em>IFRR 2025 International Symposium of Experimental Robotics</em></p>
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-content">
+      <h3 class="paper-title">Kinodynamic Motion Planning for Mobile Robot Navigation across Inconsistent World Models</h3>
+      <p class="paper-authors">By Eric R. Damm, and Thomas M. Howard</p>
+      <p class="paper-conference">Spotlight paper in <em>RSS 2025 Workshop on Resilient Off-road Autonomous Robotics</em></p>
+      <p class="paper-links">
+        [<a href="https://openreview.net/pdf?id=3g2cGeYHrr" target="_blank">PDF</a>]
+        [<a href="https://openreview.net/forum?id=3g2cGeYHrr&noteId=3g2cGeYHrr" target="_blank">OpenReview</a>]
+        [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ssqYfhEAAAAJ&citation_for_view=ssqYfhEAAAAJ:UeHWp8X0CEIC" target="_blank">Google Scholar</a>]
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-content">
+      <h3 class="paper-title">Homotopy-Aware Efficiently Adaptive State Lattices for Mobile Robot Motion Planning in Cluttered Environments</h3>
+      <p class="paper-authors">By Ashwin Satish Menon, Eric R. Damm, and Thomas M. Howard</p>
+      <p class="paper-conference">In <em>IEEE Robotics and Automation Letters, 2024</em></p>
+      <p class="paper-links">
+        [<a href="https://ieeexplore.ieee.org/abstract/document/10803070" target="_blank">IEEEXplore</a>]
+        [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ssqYfhEAAAAJ&citation_for_view=ssqYfhEAAAAJ:qjMakFHDy7sC" target="_blank">Google Scholar</a>]
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-content">
+      <h3 class="paper-title">Toward Mobile Robot Navigation in Unstructured Environments Using Topology-Aware Efficiently Adaptive State Lattices</h3>
+      <p class="paper-authors">By Ashwin Satish Menon, Eric R. Damm, and Thomas M. Howard</p>
+      <p class="paper-conference">Spotlight paper in <em>ICRA 2024 Workshop on Resilient Off-road Autonomy</em></p>
+      <p class="paper-links">
+        [<a href="https://openreview.net/pdf?id=sGPT1ws0Yf" target="_blank">PDF</a>]
+        [<a href="https://openreview.net/forum?id=sGPT1ws0Yf" target="_blank">OpenReview</a>]
+        [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ssqYfhEAAAAJ&citation_for_view=ssqYfhEAAAAJ:2osOgNQ5qMEC" target="_blank">Google Scholar</a>]
+    </div>
+  </div>
+
+  <div class="paper-card">
+    <div class="paper-content">
+      <h3 class="paper-title">Extracting Kinodynamic Constraints from Expert Driver Data for High-Speed, Mobile Robot Navigation in Off-Road Environments</h3>
+      <p class="paper-authors">By Eric R. Damm, Steven M. Willits, Ryan Arciero, and Thomas M. Howard</p>
+      <p class="paper-conference">In <em>ICRA 2024 Workshop on Resilient Off-road Autonomy</em></p>
+      <p class="paper-links">
+        [<a href="https://openreview.net/pdf?id=mB0tCs7goE" target="_blank">PDF</a>]
+        [<a href="https://openreview.net/forum?id=mB0tCs7goE" target="_blank">OpenReview</a>]
+        [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ssqYfhEAAAAJ&citation_for_view=ssqYfhEAAAAJ:d1gkVwhDpl0C" target="_blank">Google Scholar</a>]
+    </div>
+  </div>
+
   <div class="paper-card">
     <div class="paper-content">
       <h3 class="paper-title">Terrain-Aware Kinodynamic Planning with Efficiently Adaptive State Lattices for Mobile Robot Navigation in Off-Road Environments</h3>
-      <p class="paper-authors">By Eric R. Damm, Jason M. Gregory, Eli S. Lancaster, Felix A. Sanchez, Daniel M. Sahu, Thomas M. Howard</p>
+      <p class="paper-authors">By Eric R. Damm, Jason M. Gregory, Eli S. Lancaster, Felix A. Sanchez, Daniel M. Sahu, and Thomas M. Howard</p>
       <p class="paper-conference">In <em>2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em></p>
-      <p class="paper-link"><a href="YOUR_PAPER_LINK.pdf" target="_blank">[PDF]</a></p>
+      <p class="paper-links">
+        [<a href="https://arxiv.org/pdf/2504.17889" target="_blank">PDF</a>]
+        [<a href="https://arxiv.org/abs/2504.17889" target="_blank">arXiv</a>]
+        [<a href="https://ieeexplore.ieee.org/document/10341537" target="_blank">IEEE Xplore</a>]
+        [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ssqYfhEAAAAJ&citation_for_view=ssqYfhEAAAAJ:u-x6o8ySG0sC" target="_blank">Google Scholar</a>]
     </div>
   </div>
+
+  <div class="paper-card">
+    <div class="paper-content">
+      <h3 class="paper-title">Magnetoactive Elastomer Solenoid Development and Implementation in Underwater Jet Propulsion</h3>
+      <p class="paper-authors">By Eric R. Damm</p>
+      <p class="paper-conference"><em>For partial fulfillment of the requirements of the degree of Master of Science in
+Mechanical Engineering, 2019</em></p>
+      <p class="paper-links">
+        [<a href="https://www.proquest.com/docview/2313670917?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses" target="_blank">ProQuest</a>]
+        [<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=ssqYfhEAAAAJ&citation_for_view=ssqYfhEAAAAJ:u5HHmVD_uO8C" target="_blank">Google Scholar</a>]
+    </div>
+  </div>
+
 </div>
 
 <div class="footer">
