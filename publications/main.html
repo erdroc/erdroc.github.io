@@ -4,6 +4,55 @@
 <link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/stylesheets/styles.css">
+<style>
+  .papers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* spacing between cards */
+}
+
+.paper-card {
+  display: flex;
+  align-items: flex-start;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.paper-number {
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.paper-content {
+  line-height: 1.3; /* tighter spacing */
+}
+
+.paper-title {
+  margin: 0 0 0.3rem 0;
+}
+
+.paper-authors,
+.paper-conference,
+.paper-link {
+  margin: 0 0 0.3rem 0;
+}
+
+.paper-conference {
+  font-style: italic;
+}
+
+.paper-link a {
+  text-decoration: none;
+  color: #007acc;
+}
+
+.paper-link a:hover {
+  text-decoration: underline;
+}
+</style>
 </head>
 <body>
 
@@ -26,12 +75,16 @@
     });
 </script>
 
-<div class="row">
-	<div class="card">
-		<h3>Terrain-Aware Kinodynamic Planning with Efficiently Adaptive State Lattices for Mobile Robot Navigation in Off-Road Environments</h2>
-		<h4>By Eric R. Damm, Jason M. Gregory, Eli S. Lancaster, Felix A. Sanchez, Daniel M. Sahu, Thomas M. Howard</h5>
-		<h5>In 2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</h5>
-	</div>
+<div class="papers">
+  <div class="paper-card">
+    <div class="paper-number">1.</div>
+    <div class="paper-content">
+      <h3 class="paper-title">Terrain-Aware Kinodynamic Planning with Efficiently Adaptive State Lattices for Mobile Robot Navigation in Off-Road Environments</h3>
+      <p class="paper-authors">By Eric R. Damm, Jason M. Gregory, Eli S. Lancaster, Felix A. Sanchez, Daniel M. Sahu, Thomas M. Howard</p>
+      <p class="paper-conference">In <em>2023 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em></p>
+      <p class="paper-link"><a href="YOUR_PAPER_LINK.pdf" target="_blank">[PDF]</a></p>
+    </div>
+  </div>
 </div>
 
 <div class="footer">
